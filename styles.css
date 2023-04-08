@@ -31,21 +31,31 @@
 }
 
 .apresentacao__links{
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*coloca os quadros lado a lado*/
+    flex-direction: column; /*falando para o flexbox que eu quero em colunas e nao linhas(rows)*/
+    justify-content: space-between; /**/
+    align-items: center; /*centralizando o objeto*/
+    gap: 32px; /*distancia entre um elemento e outro*/
+}
+
+.apresentacao__links_subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link{
-    background-color: #22D4FD;
-    width: 280px;
-    text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 21.5px 0;
+    /* background-color: #22D4FD; */
+    border: 2px solid #22D4FD; /*colocando uma borda solida(podendo mudar para pontilhada (dotted) com a cor desejada*/
+    width: 378px; /*designando o tamanho horizontal botao*/
+    text-align: center; /*forma de alinhamento do texto centradlizado*/
+    border-radius: 8px; /*definindo o raio da borda do botao*/
+    font-size: 24px; /*definindo o tamanho da fonte do texto do botao*/
+    font-weight: 600; /**/
+    padding: 21.5px 0; /*definindo a distancia em que o texto vai estar da borda*/
     text-decoration: 0; /*remove underline do link*/
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    color: #F6F6F6; /*definindo a cor do texto*/
+    font-family: 'Montserrat', sans-serif; /*definindo a fonte do texto que ja foi importada para o projeto*/
 
 }
 
